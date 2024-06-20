@@ -1,7 +1,7 @@
 import { Box, Flex, Link, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { useState } from "react";
-import { SearchIcon } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,7 +20,7 @@ const Navbar = () => {
           Products
         </Link>
         <InputGroup width="auto" ml={4}>
-          <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
+          <InputLeftElement pointerEvents="none" children={<FaSearch color="gray.300" />} />
           <Input
             type="text"
             placeholder="Search products"

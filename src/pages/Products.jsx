@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Image, Text, Button, VStack, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { SearchIcon } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const products = [
   { id: 1, name: "Smartphone", price: "$699", image: "/images/smartphone.jpg" },
@@ -28,7 +28,7 @@ const Products = () => {
   return (
     <Box p={4}>
       <InputGroup mb={4}>
-        <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
+        <InputLeftElement pointerEvents="none" children={<FaSearch color="gray.300" />} />
         <Input
           type="text"
           placeholder="Search products"
